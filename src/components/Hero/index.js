@@ -8,9 +8,9 @@ const Hero = () => {
             <Navbar />
             <HeroContent>
                 <HeroItems>
-                    <HeroH1></HeroH1>
-                    <HeroP></HeroP>
-                    <HeroBtn></HeroBtn>
+                    <HeroH1>We Love Literature</HeroH1>
+                    <HeroP>Loren dolor sit amet, consectetur adipiscing, et dolore magna aliqua.</HeroP>
+                    <HeroBtn>READ MORE</HeroBtn>
                 </HeroItems>
                 <HeroImg></HeroImg>
             </HeroContent>
