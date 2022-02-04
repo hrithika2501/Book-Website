@@ -11,7 +11,7 @@ import {product3Data} from '../Pages/data3';
 
 
 const Products = () => {
-    const[active, setActive] = useState("First");
+    const[active, setActive] = useState("");
     return (
         <>
             <Nav>

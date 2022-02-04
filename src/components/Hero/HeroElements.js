@@ -14,6 +14,10 @@ padding: 0rem calc((100vw-1300px)/2);
 display: flex;
 justify-content: space-around;
 align-items: center;
+@media screen and (max-width: 768px){
+    /* justify-content: center; */
+
+    }
 `;
 
 export const HeroItems = styled.div `
@@ -28,6 +32,11 @@ width: 650px;
 color: #000;
 line-height: 1;
 margin-bottom: 3rem;
+@media screen and (max-width: 768px){
+    /* width: 600px; */
+    align-items: center;
+
+    }
 `;
 
 export const HeroH1 = styled.h1 `
@@ -45,6 +54,10 @@ margin-left: 0.3em;
 margin-bottom: 3rem;
 color: #555555;
 font-weight: 500;
+@media screen and (max-width: 768px){
+    text-align: center;
+
+    }
 `;
 
 export const HeroBtn = styled.button `
@@ -73,4 +86,8 @@ background: url(${ImgBg}) no-repeat;
 background-size: cover;
 background-position: center;
 margin-bottom: 4rem;
+@media screen and (max-width: 768px){
+    display: none;
+
+    }
 `;

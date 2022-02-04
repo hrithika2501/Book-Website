@@ -40,12 +40,27 @@ height: 55vh;
 display: flex;
 justify-content: space-around;
 align-items: flex-start;
+@media screen and (max-width: 768px){
+   height: 60vh;
+    
+    }
+    @media screen and (max-width: 430px){
+     flex-direction: column;
+     height: 100vh;
+     align-items: center;
+     justify-content: space-around;
+
+    }
 
 `
 export const AuthCard = styled.div `
 margin: 0 2rem;
 line-height: 2;
 width: 200px;
+@media screen and (max-width: 768px){
+    width: 180px;
+    
+    }
 
 `
 export const AuthImg = styled.img `
@@ -53,6 +68,10 @@ height: 180px;
 min-width: 90px;
 max-width: 100%;
 padding-left: 0.5em;
+@media screen and (max-width: 768px){
+    height: 140px;
+
+    }
 
 `
 
@@ -62,4 +81,8 @@ font-size: 1rem;
 font-family: 'Inter', sans-serif;
 color: #999999;
 text-align: center;
+@media screen and (max-width: 768px){
+    font-size: 0.9rem;
+
+    }
 `

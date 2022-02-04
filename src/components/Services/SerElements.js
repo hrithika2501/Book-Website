@@ -14,7 +14,7 @@ justify-content: center;
 export const Items=  styled.div`
 display:flex;
 flex-direction: column;
-justify-content: flex-start;
+justify-content: center;
 align-items: center;
 padding-top: 2em;
 color: #fff;
@@ -59,4 +59,15 @@ border: 1px solid white;
     cursor: pointer;
     color: #000;
 }
+
+@media screen and (max-width: 768px){
+    font-size: 0.8rem;
+
+    }
+    @media screen and (max-width: 430px){
+    font-size: 0.8rem;
+    padding: 0.8rem 0.8rem;
+    width: 45%;
+
+    }
 `;

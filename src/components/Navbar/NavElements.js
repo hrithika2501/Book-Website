@@ -3,6 +3,7 @@ import styled from 'styled-components/macro'
 import {Link} from 'react-router-dom'
 import Logos from '../../images/logo.png'
 
+
 export const Nav = styled.nav`
     background: transparent;
     height: 80 px;
@@ -16,6 +17,10 @@ export const Left = styled.div`
     justify-content: space-between;
     align-items: center;
     margin-left: 3em;
+    @media screen and (max-width: 430px){
+     margin-left: 1.5em;
+
+    }
 `;
 
 export const Logo = styled.div`
@@ -25,6 +30,11 @@ export const Logo = styled.div`
     background: url(${Logos}) no-repeat;
     background-size: cover;
     background-position: center;
+    @media screen and (max-width: 430px){
+     width: 90px;
+     height: 70px;
+
+    }
     
 `;
 
@@ -37,8 +47,12 @@ export const NavLinks = styled (Link) `
     font-weight: 600;
     padding-left: 3em;
 
-    &:active {
+    &.active {
         color: #000000;
+    }
+    @media screen and (max-width: 768px){
+     display: none;
+
     }
 `;
 
@@ -56,4 +70,24 @@ export const NavMenuLink = styled (Link) `
     cursor: pointer;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
+    @media screen and (max-width: 768px){
+     display: none;
+
+    }
 `;
+
+export const MobileIcon = styled.div `
+display: none;
+@media screen and (max-width: 768px){
+     
+display: block;
+position: absolute;
+top:0;
+right:0;
+cursor:pointer;
+transform: translate(-100%, 60%);
+font-size: 1.8rem;
+color: #000;
+}
+`;
+

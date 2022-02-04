@@ -1,4 +1,4 @@
-import React from 'react'
+
 import styled from 'styled-components'
 
 export const Container = styled.div`
@@ -18,6 +18,19 @@ justify-items: center;
 align-items: center;
 /* padding-left:4em; */
 /* padding-top: 1em; */
+@media screen and (max-width: 1024px){
+    grid-template-columns: 180px 180px 180px 180px;
+    }
+    @media screen and (max-width: 768px){
+        width: 80%;
+    grid-template-columns: 180px 180px 180px;
+
+    }
+    @media screen and (max-width: 430px){
+        width: 40%;
+    grid-template-columns: 180px;
+
+    }
 `;
 
 export const ImageWrapper = styled.div`

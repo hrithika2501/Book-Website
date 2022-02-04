@@ -1,7 +1,8 @@
 import React from 'react'
-import {Nav, Left, Logo, NavLinks, Right, NavMenuLink} from './NavElements'
+import {FaBars} from 'react-icons/fa'
+import {Nav, Left, Logo, NavLinks, Right, NavMenuLink, MobileIcon} from './NavElements'
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
     return (
         <Nav>
             <Left>
@@ -13,6 +14,10 @@ const Navbar = () => {
             <Right>
                 <NavMenuLink to=''>JOIN US</NavMenuLink>
             </Right>
+            <MobileIcon onClick={toggle}>
+                    
+                    <FaBars />
+                </MobileIcon>
             
         </Nav>
     )

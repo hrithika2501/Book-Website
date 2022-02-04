@@ -9,6 +9,11 @@ margin-top: 3em;
 /* padding: 2rem 3rem; */
 /* z-index:100; */
 width: 100vw;
+@media screen and (max-width: 430px){
+     height: 45vh;
+margin-top: 4em;
+    }
+
 `;
 
 export const NavMenu = styled.div `
@@ -18,6 +23,16 @@ justify-content: space-around;
 margin: 0 6em;
 /* width: 80%; */
 height: 100%;
+@media screen and (max-width: 768px){
+    margin: 0 2em;
+
+    }
+    @media screen and (max-width: 430px){
+     flex-direction: column;
+     margin: 2em 2em;
+     justify-content: space-between;
+
+    }
 `;
 
 
@@ -45,7 +60,7 @@ font-size: 1rem;
 
 
 
-&:active {
+&.active {
     background-color: #000;
     color: #fff;
     

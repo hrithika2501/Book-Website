@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React from 'react'
 import { Container, Content, ImageWrapper, Image} from './styles';
 
 const Fiction = ({data}) => {
